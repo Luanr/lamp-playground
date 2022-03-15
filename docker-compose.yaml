@@ -23,7 +23,7 @@ services:
     environment:
       PMA_HOST: mysql-server
       PMA_USER: root
-      PMA_PASSWORD: secret
+      PMA_PASSWORD: ${MYSQL_PWD}
     ports:
       - "5000:80"
 volumes:
