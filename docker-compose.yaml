@@ -1,6 +1,6 @@
 version: "3.7"
 services:
-  web-server:
+  web-server-php:
     build:
       dockerfile: php.Dockerfile
       context: .
@@ -8,7 +8,7 @@ services:
     volumes:
       - "./projects/:/var/www/html/"
     ports:
-      - "8081:80"
+      - "8082:80"
   mysql-server:
     image: mysql:8.0.19
     restart: always
